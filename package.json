@@ -1,0 +1,24 @@
+{
+  "author": "Daniel Klingmann <sargodarya@gmail.com>",
+  "bin": {
+    "icomoon-cli": "cli.js"
+  },
+  "dependencies": {
+    "chromy": "^0.5.11",
+    "extract-zip": "^1.6.7",
+    "fs-extra": "^7.0.1",
+    "yargs": "^13.2.2"
+  },
+  "description": "Fork of the original icomoon-cli package. icomoon-cli is a cross platform command line tool which help you upload your new icons into an existed icomoon set.",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "keywords": ["icomoon", "icons", "generation"],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@sargodarya/icomoon-cli",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "version": "1.0.0"
+}
