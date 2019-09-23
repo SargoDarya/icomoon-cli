@@ -208,7 +208,8 @@ async function pipeline(options = {}) {
     await c.waitLoadEvent();
     await waitVisible(c, PAGE.DOWNLOAD_BUTTON);
     await c.click(PAGE.DOWNLOAD_BUTTON);
-    const zipName = `${selection.preferences.fontPref.metadata.fontFamily}.zip`;
+    const fontPrefMetadata = selection.preferences.fontPref.metadata;
+    const zipName = `${fontPrefMetadata.fontFamily}-v${fontPrefMetadata.majorVersion}.${fontPrefMetadata.minorVersion}.zip`;
     logger(`Started to download ${zipName}`);
     const zipPath = path.join(outputDir, zipName);
     await checkDownload(zipPath);

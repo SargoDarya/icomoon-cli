@@ -1,5 +1,8 @@
 # icomoon-cli
 
+NOTE: This is a fork of the original icomoon-cli package from NPM https://www.npmjs.com/package/icomoon-cli
+as it wasn't working properly.
+
 icomoon-cli is a cross platform command line tool which help you upload your new icons into an existed icomoon set.
 
 Since icomoon do not provide any public API to use, you may found it's hard to integrate icomoon into your current workflow. icomoon-cli was made to solve this.
